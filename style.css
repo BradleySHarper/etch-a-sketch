@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    border: 1px solid black;
+    height: 31px;
+    width: 31px;
+
+}
+
+.container>div:nth-child(17n + 1){
+    width: 100%;
+    border: 0;
+    height: 0;
+}
+
+
+.active {
+    background-color: blue;
+    transition: all 0.5s ease;
+}
