@@ -1,27 +1,25 @@
-* {
-    box-sizing: border-box;
+
+
+#container {
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	height:700px;
+	width:700px;
+	padding: 0;
+	border: none;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
+.grid {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #000;
+	display:inline-block;
 }
 
-.container>div {
-    border: 1px solid black;
-    height: 31px;
-    width: 31px;
-
-}
-
-.container>div:nth-child(17n + 1){
-    width: 100%;
-    border: 0;
-    height: 0;
-}
-
-
-.active {
+.my-color-class {
     background-color: blue;
-    transition: all 0.5s ease;
 }
